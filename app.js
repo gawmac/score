@@ -12,8 +12,6 @@ app.get('/about', (req, res) => {
     res.send('ABOUT');
 });
 
-const test = 'hi';
-
 const port = 5000;
 
 app.listen(port, ()=>{
