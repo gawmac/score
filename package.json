@@ -1,0 +1,28 @@
+{
+  "name": "score",
+  "version": "1.0.0",
+  "description": "Information broker app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gawmac/score.git"
+  },
+  "keywords": [
+    "data",
+    "node.js",
+    "express",
+    "mongodb"
+  ],
+  "author": "gawmac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gawmac/score/issues"
+  },
+  "homepage": "https://github.com/gawmac/score#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
