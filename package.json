@@ -1,10 +1,10 @@
 {
   "name": "score",
   "version": "1.0.0",
-  "description": "Information broker app",
+  "description": "API's information broker app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,12 @@
     "data",
     "node.js",
     "express",
-    "mongodb"
+    "mongodb",
+    "passport",
+    "Google OAuth",
+    "mongoose",
+    "materialize",
+    "handlebars"
   ],
   "author": "gawmac",
   "license": "MIT",
@@ -25,6 +30,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "materialize-css": "^1.0.0-rc.1"
+    "materialize-css": "^1.0.0-rc.1",
+    "mongoose": "^5.0.17"
   }
 }
