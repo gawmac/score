@@ -1,6 +1,13 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const mongoose = require('mongoose');
+const passport = require('passport');
+
+//Passport Config
+require('./config/passport')(passport);
+
+//Load Routes
+const auth = require('./routes/auth')
 
 const app = express();
 
@@ -22,6 +29,9 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about');
 });
+
+//Use Routes
+app.use('/auth', auth);
 
 const port = process.env.PORT || 5000;
 
